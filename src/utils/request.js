@@ -3,7 +3,7 @@ import store from '@/store'
 
 // create an axios instance
 const service = axios.create({
-    baseURL: 'http://127.0.0.1:3000/',
+    baseURL: 'http://sys.ezibuykorea.com/',
     timeout: 100000, // request timeout
     headers: {
       'Accept': 'application/json'

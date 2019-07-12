@@ -12,8 +12,8 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api/':{
-        target: 'http://127.0.0.1:3000',
-        // target: 'http://sys.ezibuykorea.com/',
+        // target: 'http://127.0.0.1:3000',
+        target: 'http://sys.ezibuykorea.com/',
         changeOrigin: true,
         pathRewrite: {
           '^/api': '/'
