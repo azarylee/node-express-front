@@ -3,12 +3,12 @@ import store from '@/store'
 
 // create an axios instance
 const service = axios.create({
-    baseURL: 'http://sys.ezibuykorea.com/',
+    baseURL: 'http://127.0.0.1:3000/',
     timeout: 100000, // request timeout
     headers: {
       'Accept': 'application/json'
     },
-    withCredentials : false
+    withCredentials: true
 })
 
 let pending = []; //声明一个数组用于存储每个ajax请求的取消函数和ajax标识

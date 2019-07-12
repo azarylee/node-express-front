@@ -62,7 +62,7 @@ export default {
       this.$store.dispatch('LoginByUsername', this.loginForm).then((res) => {
         console.log("login-handleLogin");
         console.log(res);
-        localStorage.setItem('Admin-Token',res.data.access_token);
+        // localStorage.setItem('Admin-Token',res.data.access_token);
         if(res.status == 0){
           this.$router.push({path:'/'})
         }
